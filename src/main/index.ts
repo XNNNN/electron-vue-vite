@@ -12,6 +12,8 @@ let win: BrowserWindow | null = null
 
 async function bootstrap() {
   win = new BrowserWindow({
+    width: 800,
+    height: 600,
     webPreferences: {
       preload: path.join(__dirname, '../preload/index.cjs'),
     },
@@ -24,7 +26,7 @@ async function bootstrap() {
     const url = `http://${pkg.env.HOST || '127.0.0.1'}:${pkg.env.PORT}`
 
     win.loadURL(url)
-    win.maximize()
+    // win.maximize()  是否全屏显示
     win.webContents.openDevTools()
   }
 }
