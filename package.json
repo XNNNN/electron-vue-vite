@@ -2,7 +2,7 @@
   "name": "electron-vue-vite",
   "version": "0.0.1",
   "main": "dist/main/index.cjs",
-  "author": "草鞋没号 <308487730@qq.com>",
+  "author": "X_NNNNN <735828312@qq.com>",
   "license": "MIT",
   "scripts": {
     "dev": "node scripts/watch.mjs",
@@ -36,7 +36,10 @@
   ],
   "build": {
     "mac": {
-      "icon": "./src/renderer/public/favicon.ico"
+      "icon": "./src/renderer/public/Icon.icns"
+    },
+    "win": {
+      "icon": "./src/renderer/public/Icon.ico"
     }
   }
 }

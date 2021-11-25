@@ -3,7 +3,7 @@
  * @type {import('electron-builder').Configuration}
  */
 const config = {
-  appId: "308487730@qq.com",
+  appId: "735828312@qq.com",
   asar: true,
   directories: {
     output: "release/${version}"
